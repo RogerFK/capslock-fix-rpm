@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Apply Custom Capslock
+Exec=/usr/bin/remap_capslock.sh
+OnlyShowIn=GNOME;KDE;XFCE;
+X-GNOME-Autostart-Phase=Applications
