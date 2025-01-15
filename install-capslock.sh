@@ -5,7 +5,7 @@ echo "Downloading and installing the package..."
 if command -v rpm-ostree &> /dev/null; then
     echo "Installing package using rpm-ostree..."
     curl -sSL https://github.com/rogerfk/capslock-fix-rpm/releases/latest/download/capslock-delay-fix.rpm -o /tmp/capslock-delay-fix.rpm
-    rpm-ostree install /tmp/capslock-delay-fix.rpm
+    rpm-ostree install /tmp/capslock-delay-fix.rpm --force-replacefiles
 elif command -v dnf &> /dev/null; then
     echo "Installing package using dnf..."
     sudo dnf install -y https://github.com/rogerfk/capslock-fix-rpm/releases/latest/download/capslock-delay-fix.rpm
